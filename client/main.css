@@ -1,0 +1,48 @@
+/* CSS declarations go here */
+
+.container {
+  border: 1px solid black;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom:25px;
+}
+
+th{
+	border-bottom :3px solid gray;
+}
+
+
+table.striped {
+	border:2px solid gray;
+	margin-left:200px;
+	padding:10px;margin-top:20px;
+	width:900px;
+	text-align :center;
+}
+
+form{
+	border:1px solid #000;
+	padding:20px;
+}
+
+input[type=text]{
+      margin-top:5px;
+      padding:7px;
+      width:18%;
+      margin-left: 6px;
+
+}
+
+button{
+	background-color:#4292f4;
+	width:7%;
+	height:25px;
+	color:#fff;
+	text-transform :uppercase;
+
+	
+}
+
+.t10{text-align :center;}
