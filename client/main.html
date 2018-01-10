@@ -1,53 +1,10 @@
 <head>
-  <title>simpleapp</title>
-
+	<title>My first app</title>
 </head>
 
 <body>
-       <h1><u>Student Information List</u></h1>
-        {{> infoTemplate}}
+  {{> bodyTemplate }}
+
+  {{> itemsListTemlate }}
 
 </body>
-
-<template name="infoTemplate">
- <div>
-        <form method="Post">
-	         <h2><u>Student information Input:</u> </h2>
-		      
-		      Name:<input type ="text" class="nameField" name="name"><br>
-		      Email: <input type ="text" class="emailField" name="email"><br>
-		      Phone: <input type ="tel" class="phoneNumberField" name="phone"><br>
-		      Date of Birth <input type ="text" class="dateOfBirthField" name="dateOfBirth"><br><br>
-
-               <button type="submit" class="Submit" value="submit">Save</button>
-           </form>
-      
-      <div class="container">
-
-      	  <h2 class="t10"><u>Student Data Table</u></h2>
-
-      	   <table class="striped">
-                <thead>
-                    <tr>
-                    	<th >Name</th>
-                    	<th>Email</th>
-                    	<th>Phone</th>
-                    	<th>Date of Birth</th>
-                    </tr>
-                </thead>
-                <tbody>
-				        {{#each returngetAllItems}}
-                	    <tr>
-                	    	<td> {{name}} </td>
-							<td> {{email}} </td>
-							<td> {{phone}} </td>
-							<td> {{dateOfBirth}} </td>
-                		</tr>
-                		{{/each}}
-                </tbody>
-      	</table>
-      </div>       
-</div>
-</template>
-
-

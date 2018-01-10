@@ -1,0 +1,41 @@
+<template name="bodyTemplate">
+
+    <h2><u>Student information Input:</u> </h2>
+		      
+  <form id="newInfoForm">
+      Name:<input type ="text" class="nameField" name="name"><br>
+      Email: <input type ="text" class="emailField" name="email"><br>
+      Phone: <input type ="tel" class="phoneNumberField" name="phone"><br>
+      Date of Birth <input type ="text" class="dateOfBirthField" name="dateOfBirth"><br><br>
+
+    <button id="submitButton">Save</button>
+  </form>
+
+</template>
+
+
+<template name="itemsListTemlate">
+  
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Email</th>
+          <th>PHone</th>
+          <th>Date of Birth</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        {{#each getAllItems}}
+         <tr>
+          <td>{{name}}</td>
+          <td>{{email}}</td>
+          <td>{{phone}}</td>
+          <td>{{dateOfBirth}}</td>
+          <!-- <td><a href="#" class="deleteItem" data-id="{{_id}}"> Delete </a></td> -->
+        </tr>
+        {{/each}}
+      </tbody>
+    </table>
+</template>
